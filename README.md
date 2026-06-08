@@ -53,7 +53,7 @@ npm run build
 
 🎯 Live Demo
 
-👉[ Coming Soon (Deploying on Vercel)](https://sneha-portfolio-sand.vercel.app/)
+👉(https://sneha-portfolio-sand.vercel.app/)
 
 👩‍💻 Author
 

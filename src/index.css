@@ -180,8 +180,9 @@ font-size:2rem;
   color:#cbd5e1;
 }
 .skills{
-padding:100px 8%;
+padding:60px 8%;
   text-align: center;
+   margin:0;
 }
 
 .skills h2{
@@ -689,12 +690,15 @@ html,
 body,
 #root{
   width:100%;
-  overflow-x:hidden;
+   scroll-behavior:smooth;
 }
 
 section{
-  width:100%;
+  
+  padding:60px 8%;
+  margin:0;
 }
+
 .hamburger{
   display:none;
   font-size:2rem;
@@ -1040,9 +1044,22 @@ font-size: 2rem;
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:25px;
-
   max-width:1200px;
   margin:0 auto;
+  max-width:1200px;
+  margin:0 auto;
+}
+@media(max-width:900px){
+  .stats-container{
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+  }
+}
+
+@media(max-width:500px){
+  .stats-container{
+    grid-template-columns:1fr;
+  }
 }
 
 .experience-container{
@@ -1392,13 +1409,13 @@ font-size: 2rem;
   }
 
   .floating-card {
-    transform: scale(0.75);
+    transform: scale(0.65);
   }
 
-  .card1 { top: 10px; left: -20px; }
-  .card2 { top: 10px; right: -20px; }
-  .card3 { bottom: 40px; right: -25px; }
-  .card4 { bottom: 40px; left: -25px; }
+  .card1 { top: -10px; left: -15px; }
+  .card2 { top: -10px; right: -15px; }
+  .card3 { bottom: 10px; right: -15px; }
+  .card4 { bottom: 10px; left: -15px; }
 
   /* ===== SKILLS ===== */
   .skills-grid {
@@ -1523,4 +1540,46 @@ font-size: 2rem;
   color: #a855f7;
   margin-bottom: 10px;
   filter: drop-shadow(0 0 10px rgba(168,85,247,0.5));
+}
+.skills,
+.experience,
+.education,
+.projects,
+.certifications,
+.about{
+  margin:0;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+@media(max-width:900px){
+  section{
+    padding:60px 6%;
+  }
+}
+.hero img{
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero-image img{
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.hero-image{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  flex:1;
+}
+
+.hero{
+  gap:40px;
 }

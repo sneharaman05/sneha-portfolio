@@ -41,7 +41,7 @@ function Hero() {
       ]}
       loop={0}
       cursor
-      cursorStyle="|"
+      cursorStyle=">"
       typeSpeed={80}
       deleteSpeed={50}
       delaySpeed={1200}
